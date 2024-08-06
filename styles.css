@@ -1,0 +1,58 @@
+/* Estilo básico para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo del encabezado */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo del contenedor de la imagen */
+#image {
+    width: 30%; /* Ajusta el ancho del contenedor de imagen */
+    max-width: 1100px; /* Ajusta el ancho máximo para el contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    background-color: #eee;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /* Asegura que la imagen de fondo no se repita */
+    line-height: 400px; /* Ajusta la línea para centrar el texto verticalmente */
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Añade espacio interno para el texto */
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+}
+
+/* Estilo del contenedor de miniaturas */
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre las miniaturas */
+    padding: 20px;
+}
+
+/* Estilo de las miniaturas */
+.thumbnail {
+    width: 150px; /* Ajusta el ancho de las miniaturas */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor de la miniatura */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Efecto al pasar el ratón por encima de las miniaturas */
+.thumbnail:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la miniatura */
+}
